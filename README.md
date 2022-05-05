@@ -24,3 +24,7 @@ Test 6: "It should return the pizza price after the user orders a medium pizza w
 Code: userPizza.Pizza.Price();
 Expected Output: 18.99;
  
+Test 7: "It should return the pizza price after the user orders a large pizza with 2 toppings(each topping * 4)";
+Code: userPizza.Pizza.Price();
+Expected Output:22.99;
+

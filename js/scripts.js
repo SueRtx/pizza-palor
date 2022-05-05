@@ -10,6 +10,6 @@ Pizza.prototype.pizzaPrice = function() {
 } else if (this.size==="medium") {
     pizzaPrice += this.topping *3 + 3;
 } else if (this.size==="large") {
-  pizzaPrice += this.topping *2 + 4;
+  pizzaPrice += this.topping *4 + 4;
 }console.log(pizzaPrice);
 }
