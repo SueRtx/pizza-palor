@@ -4,9 +4,9 @@ function Pizza(size, topping){
 }
 
 Pizza.prototype.pizzaPrice = function() {
-  let pizzaPrice = 0;
+  let pizzaPrice = 10;
   if (this.size==="small") { 
-    pizzaPrice += 1;
+    pizzaPrice += this.topping *2;
 } else if (this.size==="medium") {
     pizzaPrice += 2;
 } else if (this.size==="large") {
