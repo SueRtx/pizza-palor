@@ -8,8 +8,8 @@ Pizza.prototype.pizzaPrice = function() {
   if (this.size==="small") { 
     pizzaPrice += this.topping *2;
 } else if (this.size==="medium") {
-    pizzaPrice += 2;
+    pizzaPrice += this.topping *3 + 3;
 } else if (this.size==="large") {
-  pizzaPrice += 4;
+  pizzaPrice += this.topping *2 + 4;
 }console.log(pizzaPrice);
 }
