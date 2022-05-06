@@ -5,20 +5,20 @@ function Pizza(size, topping){
 
 Pizza.prototype.pizzaPrice = function() {
   let pizzaPriceTotal = 10;
-  if (this.size==="small") { 
+  if (this.size==="Small") { 
     pizzaPriceTotal += this.topping *3;
-  } else if (this.size==="medium") {
+  } else if (this.size==="Medium") {
     pizzaPriceTotal += this.topping *3 + 3;
-  } else if (this.size==="large") {
+  } else if (this.size==="Large") {
     pizzaPriceTotal += this.topping *3 + 5;
-  } else if (this.size==="stuff") {
+  } else if (this.size==="Stuffed") {
     pizzaPriceTotal += this.topping *3 + 6;
   } return (pizzaPriceTotal);
 }
 
 function displayPizzaOrder(pizzaToDisplay) {
   let pizzaorder = $("p#output");
-  let htmlForPizzaOrder = "Your order:" + " " +   pizzaToDisplay.size + " " + "pizza with " + pizzaToDisplay.topping + " topping." + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
+  let htmlForPizzaOrder = "Your order:" + " " + pizzaToDisplay.size + " " + "pizza with " + pizzaToDisplay.topping + " topping." + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
   pizzaorder.html(htmlForPizzaOrder);
 }
 
