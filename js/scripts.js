@@ -17,7 +17,7 @@ Pizza.prototype.pizzaPrice = function() {
 
 function displayPizzaOrder(pizzaToDisplay) {
   let pizzaorder = $("p#output");
-  let htmlForPizzaOrder = "Your order: " + pizzaToDisplay.size + "pizza with " + pizzaToDisplay.topping + " topping" + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
+  let htmlForPizzaOrder = "Your order:" + " " + pizzaToDisplay.size + " " + "pizza with " + pizzaToDisplay.topping + " topping." + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
   pizzaorder.html(htmlForPizzaOrder);
 }
 
@@ -31,6 +31,7 @@ $(document).ready(function () {
     let newPizza = new Pizza(newSize,newTopping);
     let finalPizzaTotal = newPizza.pizzaPrice();
     displayPizzaOrder(newPizza);
+    ("#output").show();
   });
 });    
 

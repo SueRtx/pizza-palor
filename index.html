@@ -8,12 +8,14 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
+  <div class="bg">
   <div class="container">
-  <h1>Pizza Parlor</h1>
+  
+  <h1>Sunny Pizza World</h1>
 
   <form id="pizza">
   <div class= "pizzaSize">
-    <h2>Size</h2>
+    <h2>Pizza Size</h2>
     <div class="form-check form-check-inline">
       <input class="form-check-input" value="small" type="radio"  name="size" id="small" checked>
       <label class="form-check-label" for="small">Small</label>
@@ -31,7 +33,7 @@
   </div>
 
   <div class="pizzaTopping">
-    <h2>Pizza Topping</h2>
+    <h2>Pizza Toppings</h2>
     <div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" name="topping" id="cheese" value="cheese" checked>
       <label class="form-check-label" for="cheese">Cheese</label>
@@ -51,6 +53,28 @@
       <input class="form-check-input" type="checkbox" name="topping" id="mushrooms" value="mushrooms">
       <label class="form-check-label" for="mushrooms">Mushrooms</label>
     </div>
+    <br>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="topping" id="peppers" value="peppers">
+      <label class="form-check-label" for="peppers">Peppers</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="topping" id="onions" value="onions">
+      <label class="form-check-label" for="onions">Onions</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="topping" id="tomato" value="tomato">
+      <label class="form-check-label" for="tomato">Tomato</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="topping" id="olives" value="olives">
+      <label class="form-check-label" for="olives">Black olives</label>
+    </div>
+
   </div>
 
   <button type="submit" id="button" class="btn btn-info">Order Here</button>
@@ -58,5 +82,6 @@
 
   <p id="output"></p>
   </div>
+</div>
 </body>
 </html>
