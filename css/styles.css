@@ -53,10 +53,10 @@ h3 {
   font-size: 20px;
 }
 #output {
-  color: rgba(236, 223, 223, 0.702);
+  color: white;
   font-weight: bold;
   font-size:20px;
- 
+  text-align: center;
   width: 80%;
   padding: 6px;
   
