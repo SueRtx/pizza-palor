@@ -10,30 +10,40 @@
 <body>
   <div class="bg">
   <div class="container">
+    
+  <h1>Sunny <strong><span id="blinking">Pizza</span></strong> Fusion</h1>
   
-  <h1>Sunny Pizza World</h1>
 
   <form id="pizza">
-  <div class= "pizzaSize">
-    <h2>Pizza Size</h2>
+    <h2>Create Your Own Pizza</h2>
+    <div class= "pizzaSize">
+    
     <div class="form-check form-check-inline">
-      <input class="form-check-input" value="small" type="radio"  name="size" id="small" checked>
-      <label class="form-check-label" for="small">Small</label>
+      <input class="form-check-input" value="Stuff" type="radio"  name="size" id="tuffed" checked>
+      <label class="form-check-label" for="stuffed">Stuffed: $16</label>
     </div>
 
     <div class="form-check form-check-inline">
-      <input class="form-check-input"  value="medium" type="radio"  name="size" id="medium">
-      <label class="form-check-label" for="medium">Medium</label>
+      <input class="form-check-input"  value="Large" type="radio"  name="size" id="large">
+      <label class="form-check-label" for="large">Large: $15</label>
     </div>
 
     <div class="form-check form-check-inline">
-      <input class="form-check-input"  value="large" type="radio"  name="size" id="large">
-      <label class="form-check-label" for="large">Large</label>
+      <input class="form-check-input"  value="Medium" type="radio"  name="size" id="medium">
+      <label class="form-check-label" for="medium">Medium: $13</label>
     </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" value="Small" type="radio"  name="size" id="small">
+      <label class="form-check-label" for="small">Small: $10</label>
+    </div>
+
+    
   </div>
 
   <div class="pizzaTopping">
-    <h2>Pizza Toppings</h2>
+    
+    <h3>Additional toppings: $3 </h3>
     <div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" name="topping" id="cheese" value="cheese" checked>
       <label class="form-check-label" for="cheese">Cheese</label>
@@ -78,9 +88,12 @@
   </div>
 
   <button type="submit" id="button" class="btn btn-info">Order Here</button>
+  
   </form>
+  
+  <p id="output"><br></p>
 
-  <p id="output"></p>
+
   </div>
 </div>
 </body>

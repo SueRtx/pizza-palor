@@ -5,19 +5,20 @@ function Pizza(size, topping){
 
 Pizza.prototype.pizzaPrice = function() {
   let pizzaPriceTotal = 10;
- 
   if (this.size==="small") { 
-    pizzaPriceTotal += this.topping *2;
+    pizzaPriceTotal += this.topping *3;
   } else if (this.size==="medium") {
     pizzaPriceTotal += this.topping *3 + 3;
   } else if (this.size==="large") {
-  pizzaPriceTotal += this.topping *4 + 4;
+    pizzaPriceTotal += this.topping *3 + 5;
+  } else if (this.size==="stuff") {
+    pizzaPriceTotal += this.topping *3 + 6;
   } return (pizzaPriceTotal);
 }
 
 function displayPizzaOrder(pizzaToDisplay) {
   let pizzaorder = $("p#output");
-  let htmlForPizzaOrder = "Your order:" + " " + pizzaToDisplay.size + " " + "pizza with " + pizzaToDisplay.topping + " topping." + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
+  let htmlForPizzaOrder = "Your order:" + " " +   pizzaToDisplay.size + " " + "pizza with " + pizzaToDisplay.topping + " topping." + " " + "Total: $" + pizzaToDisplay.pizzaPrice();
   pizzaorder.html(htmlForPizzaOrder);
 }
 
@@ -31,7 +32,7 @@ $(document).ready(function () {
     let newPizza = new Pizza(newSize,newTopping);
     let finalPizzaTotal = newPizza.pizzaPrice();
     displayPizzaOrder(newPizza);
-    ("#output").show();
+    
   });
 });    
 
