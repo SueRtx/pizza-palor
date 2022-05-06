@@ -1,4 +1,4 @@
-Describe: Pizza();
+Describe: Pizza(size, topping);
 Test 1: "It should return pizza size and topping after user order small cheese pizza.";
 Code: Pizza("size", "topping");
 Expected Output: Pizza {size: "Small", topping: "Cheese"};
@@ -28,3 +28,7 @@ Test 7: "It should return the pizza price after the user orders a large pizza wi
 Code: userPizza.Pizza.Price();
 Expected Output:22.99;
 
+Describe: displayPizzaOrder(pizzaToDisplay);
+Test 8: “It should display a pizza's total price.”; 
+Code: displayPizzaOrder(pizzaToDisplay)
+Expected Output: Total: $14.99
