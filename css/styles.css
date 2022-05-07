@@ -9,13 +9,12 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(79, 4, 6);
 }
 #pizza {
   margin-top:60px;
-  margin-left: -5%;
+  margin-left: -7%;
   position: absolute;
-  background: rgb(232, 56, 56);
+  background: rgb(146, 6, 6);
   width: 45%;
   padding: 20px;
   color: white;
@@ -26,11 +25,11 @@ body, html {
   font-size: 15px;
   padding: 10px;
   border: solid rgb(79, 4, 6) 5px;
-  
 }
 .pizzaTopping {
   color: white;
   margin-top:10px;
+  font-size: 15px;
   padding: 10px;
   border: solid rgb(79, 4, 6) 5px;
 }
@@ -41,13 +40,12 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  color:blue;
+  color:rgb(235, 225, 23);
   text-align: left;
-  margin-top:10px;
   font-size: 25px;
 }
 h3 {
-  color:rgb(215, 234, 94);
+  color:rgb(94, 234, 113);
   text-align: left;
   margin-top:10px;
   font-size: 20px;
@@ -59,13 +57,10 @@ h3 {
   text-align: center;
   width: 80%;
   padding: 6px;
-  
 } 
-
 .btn {
   margin-top:15px;
   background-color: yellow;
-  color: rgb(16, 16, 16);
   padding: 2px;
   border: none;
   cursor: pointer;
@@ -73,22 +68,23 @@ h3 {
   font-size: 15px;
   font-weight: bold;
 }
-
+#button {
+  background-color: yellow; 
+  color: rgb(16, 16, 16);
+  
+}
 #blinking {
   animation: opacity 2s ease-in-out infinite;
     opacity: 1;
     color: rgb(60, 210, 87);  
 }
-
 @keyframes opacity {
   0% {
     opacity: 1;
   }
-
   50% {
     opacity: 0
   }
-
   100% {
     opacity: 1;
   }

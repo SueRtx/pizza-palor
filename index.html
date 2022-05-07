@@ -9,86 +9,71 @@
 </head>
 <body>
   <div class="bg">
-  <div class="container">
-  <h1>Sunny <strong><span id="blinking">Pizza</span></strong> Fusion</h1>
-  
-  <form id="pizza">
-    <h2>Create Your Own Pizza</h2>
-    <div class= "pizzaSize">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" value="Small" type="radio"  name="size" id="small" checked>
-        <label class="form-check-label" for="small">Small</label>
-      </div>
-  
-      <div class="form-check form-check-inline">
-        <input class="form-check-input"  value="Medium" type="radio"  name="size" id="medium">
-        <label class="form-check-label" for="medium">Medium</label>
-      </div>
-  
-      <div class="form-check form-check-inline">
-        <input class="form-check-input"  value="Large" type="radio"  name="size" id="large">
-        <label class="form-check-label" for="large">Large</label>
-      </div>
-      
-    <div class="form-check form-check-inline">
-      <input class="form-check-input"  value="Stuffed" type="radio"  name="size" id="stuff">
-      <label class="form-check-label" for="stuff">Stuffed</label>
+    <div class="container">
+      <h1>Sunny <strong><span id="blinking">Pizza</span></strong> Fusion</h1>
+      <form id="pizza">
+        <h2>Create Your Own Pizza</h2>
+        <div class="pizzaSize">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" value="Small" type="radio" name="size" id="small" checked>
+            <label class="form-check-label" for="small">Small</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" value="Medium" type="radio" name="size" id="medium">
+            <label class="form-check-label" for="medium">Medium</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" value="Large" type="radio" name="size" id="large">
+            <label class="form-check-label" for="large">Large</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" value="Stuffed" type="radio" name="size" id="stuff">
+            <label class="form-check-label" for="stuff">Stuffed</label>
+          </div>
+        </div>
+
+        <div class="pizzaTopping">
+          <h3>Additional toppings: $3 </h3>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="cheese" value="cheese" checked>
+            <label class="form-check-label" for="cheese">Cheese</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="sausage" value="sausage">
+            <label class="form-check-label" for="sausage">Sausage</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+            <label class="form-check-label" for="mushrooms">Mushrooms</label>
+          </div>
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="peppers" value="peppers">
+            <label class="form-check-label" for="peppers">Peppers</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="onions" value="onions">
+            <label class="form-check-label" for="onions">Onions</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="tomato" value="tomato">
+            <label class="form-check-label" for="tomato">Tomato</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="topping" id="olives" value="olives">
+            <label class="form-check-label" for="olives">Black olives</label>
+          </div>
+        </div>
+
+        <button type="submit" id="button" class="btn btn-info">Order Here</button>
+        <p id="output"></p>
+      </form>
     </div>
   </div>
-
-  <div class="pizzaTopping">
-    
-    <h3>Additional toppings: $3 </h3>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="cheese" value="cheese" checked>
-      <label class="form-check-label" for="cheese">Cheese</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="pepperoni" value="pepperoni">
-      <label class="form-check-label" for="pepperoni">Pepperoni</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="sausage" value="sausage">
-      <label class="form-check-label" for="sausage">Sausage</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="mushrooms" value="mushrooms">
-      <label class="form-check-label" for="mushrooms">Mushrooms</label>
-    </div>
-    <br>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="peppers" value="peppers">
-      <label class="form-check-label" for="peppers">Peppers</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="onions" value="onions">
-      <label class="form-check-label" for="onions">Onions</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="tomato" value="tomato">
-      <label class="form-check-label" for="tomato">Tomato</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" name="topping" id="olives" value="olives">
-      <label class="form-check-label" for="olives">Black olives</label>
-    </div>
-
-  </div>
-
-  <button type="submit" id="button" class="btn btn-info">Order Here</button>
-  <p id="output"></p>
-</form>
-
-
-</div>
-</div>
 </body>
 </html>
 
