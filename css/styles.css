@@ -60,7 +60,8 @@ h3 {
 } 
 .btn {
   margin-top:15px;
-  background-color: yellow;
+  background-color: rgb(218, 241, 47);
+  color: black;
   padding: 2px;
   border: none;
   cursor: pointer;
@@ -68,15 +69,10 @@ h3 {
   font-size: 15px;
   font-weight: bold;
 }
-#button {
-  background-color: yellow; 
-  color: rgb(16, 16, 16);
-  
-}
 #blinking {
   animation: opacity 2s ease-in-out infinite;
     opacity: 1;
-    color: rgb(60, 210, 87);  
+    color: rgb(163, 210, 60);  
 }
 @keyframes opacity {
   0% {
