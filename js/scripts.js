@@ -30,7 +30,6 @@ $(document).ready(function () {
     let newSize = $("input:radio[name=size]:checked").val();
     newTopping = $('input[type="checkbox"]:checked').length;
     let newPizza = new Pizza(newSize, newTopping);
-    let finalPizzaTotal = newPizza.pizzaPrice();
     displayPizzaOrder(newPizza);
   });
 });    
